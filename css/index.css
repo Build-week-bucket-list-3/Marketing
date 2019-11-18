@@ -141,17 +141,16 @@ body {
   display: flex;
   justify-content: space-between;
   background: #027FA7;
-  width: 98%;
-  height: 88px;
+  width: 50%;
+  border: 1px solid red;
 }
 .navigation .logo {
   display: flex;
   width: 8%;
-  height: 88px;
   box-sizing: border-box;
 }
 .navigation .links {
-  width: 30%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -162,8 +161,21 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
+.navigation .links a:hover {
+  color: yellow;
+}
+.navigation .links a:nth-child(3) {
+  border-radius: 8%;
+  background-color: #39AF45;
+  width: 20%;
+  padding: 2%;
+  text-align: center;
+  border: 1px solid red;
+}
 .page-container {
+  background: #027FA7;
   display: flex;
   max-width: 100%;
   justify-content: center;
+  border: 1px solid yellow;
 }

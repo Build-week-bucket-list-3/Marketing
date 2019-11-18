@@ -3,26 +3,33 @@
  .dspflx();
  justify-content: space-between;
  background: @deep-cerulean;
- width: 98%;
- height: 88px;
- // border: 1px solid black;
+ width: 50%;
+ border: 1px solid red;
 
   .logo{
    .dspflx();
-   // justify-content: flex-start;
-   // justify-content: space-around;
    width: 8%;
-   height: 88px;
    box-sizing: border-box;
   }
   .links{
-   width: 30%;
+   width: 50%;
    // border: 1px solid red;
    .dspflx();
    justify-content: space-around;
    align-items: center;
     a{
    .nav-a-style(@white, 24px, 600);
+  }
+   a:hover{
+    color: yellow;
+  }
+  a:nth-child(3){
+   border-radius: 8%;
+   background-color: @apple;
+   width: 20%;
+   padding: 2%;
+   text-align: center;
+   border: 1px solid red;
   }
  }
 };

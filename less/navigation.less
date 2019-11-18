@@ -1,37 +1,55 @@
 //Navigation Styles here
 .navigation {
  .dspflx();
+ width: 100%;
+ height: 88px;
  justify-content: space-between;
  background: @deep-cerulean;
- width: 50%;
- border: 1px solid red;
+//  border: 1px solid red;
 
   .logo{
    .dspflx();
    width: 8%;
    box-sizing: border-box;
+  //  border: 2px solid black;
   }
-  .links{
+
+  .links-box1{
    width: 50%;
-   // border: 1px solid red;
+  //  border: 1px solid red;
    .dspflx();
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
     a{
-   .nav-a-style(@white, 24px, 600);
-  }
-   a:hover{
-    color: yellow;
-  }
-  a:nth-child(3){
-   border-radius: 8%;
-   background-color: @apple;
-   width: 20%;
-   padding: 2%;
-   text-align: center;
-   border: 1px solid red;
+   .nav-a-style(@white, 24px, 600px);
   }
  }
+
+ .links-box2{
+   width: 10%;
+   .dspflx();
+   justify-content: space-around;
+   align-items:  center;
+  //  border: 1px solid white;
+    a{
+      .nav-a-style(@white, 24px, 600px);   
+    }
+
+    a:nth-child(2){
+      width: 50%;
+      height: 40px;
+      padding: 2%;
+      text-align: center;
+      border-radius: 8%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      border: 1px solid white;
+    }
+  }
+
+    a:hover{
+    color: yellow;
+  }
 };
 
 

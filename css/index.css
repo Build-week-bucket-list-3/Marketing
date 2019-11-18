@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid red;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -136,6 +136,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  font-family: 'Ex';
 }
 .navigation {
   display: flex;
@@ -186,8 +187,57 @@ body {
 .navigation a:hover {
   color: yellow;
 }
+body {
+  font-family: 'Exo', sans-serif;
+}
 .page-container {
-  background: #027FA7;
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 100%;
+  border: 5px solid yellow;
+}
+header img {
+  width: 100%;
+}
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about .about-content {
+  margin-top: 8%;
+  width: 45%;
+  border: 1px solid black;
+}
+.about .about-content h2 {
+  font-weight: 600px;
+  font-size: 7rem;
+  color: #027FA7;
+}
+.about .about-content p {
+  margin-top: 8%;
+  font-weight: 500px;
+  font-size: 5rem;
+  line-height: 70px;
+}
+.about .about-button {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-top: 8%;
+  width: 47.5%;
+  border: 5px solid black;
+}
+.about .about-button button {
+  width: 40%;
+  margin-left: 30%;
+  background-color: #027FA7;
+  color: #FFFFFF;
+  border-radius: 4%;
+  padding: 2% 4%;
+  font-weight: 600px;
+  font-size: 7rem;
+  line-height: 48px;
 }

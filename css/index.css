@@ -197,8 +197,40 @@ body {
   max-width: 90%;
   height: 100%;
 }
-header img {
+header {
+  background-image: url("../img/Roadpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 90vh;
+  position: relative;
+  color: #FFFFFF;
+}
+header .welcome-text {
+  text-align: center;
+  position: absolute;
+  font-size: 8rem;
+  top: 30%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+header .welcome-button {
+  text-align: center;
+  position: relative;
+  width: 30%;
+  height: 10%;
+  top: 52%;
+  left: 37%;
+}
+header .welcome-button button {
+  opacity: 0.9;
+  width: 60%;
+  height: 70%;
+  font-size: 5rem;
+  color: #027FA7;
+  background: #FFFFFF;
+  border-radius: 4%;
+  border: 3px solid #027FA7;
 }
 .about {
   width: 100%;

@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid red;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -136,6 +136,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  font-family: 'Ex';
 }
 .navigation {
   display: flex;
@@ -162,7 +163,7 @@ body {
   text-decoration: none;
 }
 .navigation .links-box2 {
-  width: 10%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -175,10 +176,10 @@ body {
 }
 .navigation .links-box2 a:nth-child(2) {
   width: 50%;
-  height: 40px;
+  height: 50px;
   padding: 2%;
   text-align: center;
-  border-radius: 8%;
+  border-radius: 4%;
   margin: 0 auto;
   box-sizing: border-box;
   border: 1px solid white;
@@ -186,8 +187,115 @@ body {
 .navigation a:hover {
   color: yellow;
 }
+body {
+  font-family: 'Exo', sans-serif;
+}
 .page-container {
-  background: #027FA7;
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 100%;
+}
+header img {
+  width: 100%;
+}
+.about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.about .about-content {
+  margin-top: 8%;
+  width: 50%;
+}
+.about .about-content h2 {
+  font-weight: 600px;
+  font-size: 7rem;
+  color: #027FA7;
+}
+.about .about-content p {
+  margin-top: 8%;
+  font-weight: 500px;
+  font-size: 6rem;
+  line-height: 70px;
+}
+.about .about-button {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-top: 8%;
+  width: 40%;
+}
+.about .about-button button {
+  width: 40%;
+  margin-left: 30%;
+  background-color: #027FA7;
+  color: #FFFFFF;
+  border-radius: 4%;
+  padding: 2% 4%;
+  font-weight: 600px;
+  font-size: 7rem;
+  line-height: 48px;
+}
+.about .feature1 {
+  margin-top: 8%;
+  width: 50%;
+}
+.about .feature1 img {
+  margin-bottom: 4%;
+}
+.about .feature1 h3 {
+  font-weight: 600px;
+  font-size: 6.5rem;
+  color: #027FA7;
+}
+.about .feature1 p {
+  margin-top: 8%;
+  font-weight: 500px;
+  font-size: 4rem;
+  line-height: 70px;
+}
+.about .feature2 {
+  margin-top: 8%;
+  width: 40%;
+}
+.about .feature2 img {
+  margin-bottom: 4%;
+}
+.about .feature2 h3 {
+  font-weight: 600px;
+  font-size: 6.5rem;
+  color: #027FA7;
+}
+.about .feature2 p {
+  margin-top: 8%;
+  font-weight: 500px;
+  font-size: 3.6rem;
+  line-height: 70px;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #027FA7;
+}
+.team p {
+  color: #FFFFFF;
+}
+.team .picture-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team .picture-container .team-member {
+  width: 30%;
+  text-align: center;
+}
+.team h3 {
+  font-weight: 600px;
+  font-size: 3rem;
+  color: #FFFFFF;
 }

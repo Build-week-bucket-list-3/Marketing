@@ -146,9 +146,11 @@ body {
   background: #027FA7;
 }
 .navigation .logo {
+  width: 20%;
   display: flex;
-  width: 8%;
-  box-sizing: border-box;
+}
+.navigation .logo img {
+  width: 50%;
 }
 .navigation .links-box1 {
   width: 50%;
@@ -257,19 +259,12 @@ header .welcome-button button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 8%;
   width: 40%;
+  height: 20%;
+  border: 5px solid black;
 }
-.about .about-button button {
-  width: 40%;
-  margin-left: 30%;
-  background-color: #027FA7;
-  color: #FFFFFF;
-  border-radius: 4%;
-  padding: 2% 4%;
-  font-weight: 600px;
-  font-size: 7rem;
-  line-height: 48px;
+.about .about-button img {
+  width: 50%;
 }
 .about .feature1 {
   margin-top: 8%;

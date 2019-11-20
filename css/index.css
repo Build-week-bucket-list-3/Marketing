@@ -130,6 +130,7 @@ table {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  border: 1px solid red;
 }
 html,
 body {
@@ -327,4 +328,44 @@ footer {
 footer p {
   color: #FFFFFF;
   font-size: 1.8rem;
+}
+.body-page-container {
+  background: #027FA7;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team h1 {
+  width: 100%;
+}
+.team .team-lead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.team .team-lead .team-member-content {
+  width: 331px;
+  background: white;
+}
+.team .team-lead .team-member-content h4 {
+  width: auto;
+}
+.team .team-lead .team-member-content p {
+  width: auto;
+}
+.team .team-member {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+.team .team-member .team-member-content {
+  width: 331px;
+  background: white;
+}
+.team .team-member .team-member-content h4 {
+  width: auto;
+}
+.team .team-member .team-member-content p {
+  width: auto;
 }

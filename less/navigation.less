@@ -5,12 +5,18 @@
   height: 8%;
   justify-content: space-between;
   background: @deep-cerulean;
+    @media @tablet{
+      // height: 20%;
+    }
 
     .logo{
       width: 15%;
       .dspflx();
       justify-content: center;
       align-items: center;
+        @media @tablet{
+          width: 30%;
+        }
         h2{
           .nav-a-style(@white, 3rem, 600px);
         }
@@ -22,6 +28,12 @@
     .dspflx();
     justify-content: space-evenly;
     align-items: center;
+      @media @tablet{
+        justify-content: space-between;
+        margin-right: 5%;
+        // border: 1px solid black;
+        width: 40%;
+      }
       a{
         .nav-a-style(@white, 2.4rem, 600px);
       }
@@ -33,6 +45,12 @@
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+      @media @tablet{
+        // border: 1px solid black;
+        width: 40%;
+        flex-direction: column-reverse;
+      }
+      
       a{
         .nav-a-style(@white, 2.4rem, 600px);   
       }
@@ -41,6 +59,9 @@
       padding: 2%;
       border-radius: 4px;
       border: 1px solid white;
+        @media @tablet{
+          
+        }
     }
   }
 

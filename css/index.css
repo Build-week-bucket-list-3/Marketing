@@ -226,16 +226,16 @@ header .welcome-text {
 header .welcome-button {
   text-align: center;
   position: relative;
-  width: 30%;
+  width: 25%;
   height: 10%;
-  top: 52%;
-  left: 37%;
+  top: 42%;
+  left: 40%;
 }
 header .welcome-button button {
   opacity: 0.9;
-  width: 60%;
+  width: 100%;
   height: 70%;
-  font-size: 5rem;
+  font-size: 3.6rem;
   color: #027FA7;
   background: #FFFFFF;
   border-radius: 4%;

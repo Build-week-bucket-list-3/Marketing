@@ -1,5 +1,23 @@
+
+
 .body-page-container{
-    background: @deep-cerulean;
+    background: white;
+
+    h1 {
+        margin: 15% 5% 2% 5%;
+    }
+
+    h4 {
+        font-size: 2rem;
+        color: white;
+        padding: 4% 4% 1% 4%;
+    }
+
+    p {
+        font-size: 1.7rem;
+        color: white;
+        padding: 0 0 4% 4%;
+    }
 }
 
 .team{
@@ -8,6 +26,13 @@
 
     h1 {
         width: 100%;
+        font-weight: 600;
+        font-size: 6.4rem;
+        color: @deep-cerulean;
+
+        @media @phone {
+            text-align: center;
+        }
     }
 
     .team-lead {
@@ -17,7 +42,7 @@
 
         .team-member-content {
             width: 329px;
-            background: white;
+            background: @deep-cerulean;
 
             h4 {
                 width: auto;
@@ -35,10 +60,13 @@
         margin-top: 5%;
         justify-content: center;
         // text-align: center;
+        @media @phone {
+            width: 100%;
+        }
 
         .team-member-content {
             width: 329px;
-            background: white;
+            background: @deep-cerulean;
 
             h4 {
                 width: auto;
@@ -50,3 +78,13 @@
         }
     }
 }
+
+footer{
+    .dspflx();
+    // justify-content: center;
+    // align-items: center;
+    margin-top: 10%;
+    padding: 2% 0;
+    background-color: @deep-cerulean;
+     
+  }

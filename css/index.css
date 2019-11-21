@@ -130,7 +130,6 @@ table {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  border: 1px solid red;
 }
 html,
 body {
@@ -330,7 +329,20 @@ footer p {
   font-size: 1.8rem;
 }
 .body-page-container {
-  background: #027FA7;
+  background: white;
+}
+.body-page-container h1 {
+  margin: 15% 5% 2% 5%;
+}
+.body-page-container h4 {
+  font-size: 2rem;
+  color: white;
+  padding: 4% 4% 1% 4%;
+}
+.body-page-container p {
+  font-size: 1.7rem;
+  color: white;
+  padding: 0 0 4% 4%;
 }
 .team {
   display: flex;
@@ -338,6 +350,14 @@ footer p {
 }
 .team h1 {
   width: 100%;
+  font-weight: 600;
+  font-size: 6.4rem;
+  color: #027FA7;
+}
+@media (max-width: 500px) {
+  .team h1 {
+    text-align: center;
+  }
 }
 .team .team-lead {
   width: 100%;
@@ -346,7 +366,7 @@ footer p {
 }
 .team .team-lead .team-member-content {
   width: 329px;
-  background: white;
+  background: #027FA7;
 }
 .team .team-lead .team-member-content h4 {
   width: auto;
@@ -360,13 +380,24 @@ footer p {
   margin-top: 5%;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .team .team-member {
+    width: 100%;
+  }
+}
 .team .team-member .team-member-content {
   width: 329px;
-  background: white;
+  background: #027FA7;
 }
 .team .team-member .team-member-content h4 {
   width: auto;
 }
 .team .team-member .team-member-content p {
   width: auto;
+}
+footer {
+  display: flex;
+  margin-top: 10%;
+  padding: 2% 0;
+  background-color: #027FA7;
 }

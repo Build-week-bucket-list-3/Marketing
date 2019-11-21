@@ -3,6 +3,7 @@ body{
   font-family: 'Exo', sans-serif;
   width: 1440px;
   height: 100%;
+
     @media @tablet {
       width: 800px;
     }
@@ -15,7 +16,7 @@ body{
 .page-container {
   width: 100%;
   height: 100%;
-  
+  box-sizing: border-box;
 }
 
 
@@ -27,6 +28,7 @@ header{
   height: 95%;
   position: relative;
   color: @white;
+
     @media @tablet {
       height: 60%;
     }
@@ -45,11 +47,17 @@ header{
       top: 30%;
       left: 52%;
       transform: translate(-50%, -50%);
+
         @media @tablet{
           font-size: 3.4rem;
           width: 70%;
           top: 25%;
         }
+
+        @media @phone {
+          font-size: 2.5rem
+        }
+
     }
 
     .welcome-button{
@@ -59,8 +67,14 @@ header{
       height: 12%;
       top: 50%;
       left: 40%;
+
         @media @tablet{
           top: 45%;
+        }
+
+        @media @phone {
+          width: 40%;
+          // border: 1px solid red;
         }
 
         button{
@@ -72,12 +86,22 @@ header{
           background: @white;
           border-radius: 4px;
           border: 3px solid @deep-cerulean;
+
             @media @tablet{
               font-size: 2.6rem;
+            }
+
+            @media @phone {
+              top: 80%;
+              position: relative;
+              right: 20%;
+              height: 100%;
+              font-size: 2rem;
             }
         }
     }
 }
+
 
 .about{
   // border: 5px solid black;
@@ -86,11 +110,22 @@ header{
   flex-wrap: wrap;
   justify-content: center;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      // border: 1px solid red;
+    }
+
   .about-content{
     // border: 1px solid black;
     margin-top: 8%;
     width: 55%;
     height: 50%;
+
+    @media @phone {
+      width: 100%;
+    }
+
       h2{
         font-weight: 600px;
         font-size: 4.8rem;
@@ -102,10 +137,19 @@ header{
         font-weight: 500px;
         font-size: 3.6rem;
         line-height: 48px;
+
           @media @tablet{
             // border: 1px solid black;
             font-size: 2.4rem;
             line-height: 38px;
+          }
+
+          @media @phone {
+            width: 100%;
+            // flex-direction: column;
+            // border: 1px solid black;
+            font-size: 2.6rem;
+            // background: @azure-radiance;
           }
       }
   }
@@ -117,8 +161,14 @@ header{
     // border: 1px solid red;
     width: 40%;
     height: 50%;
+
       img{
         width: 60%;
+        box-shadow: 30px 20px @deep-cerulean;
+
+        @media @phone {
+          display: none;
+        }
       }
   }
 
@@ -127,19 +177,27 @@ header{
     margin-top: 8%;
     margin-bottom: 10%;
     max-width: 60%;
+
+      @media @phone {
+        max-width: 100%;
+      }
+
       img{
         margin-bottom: 4%;
       }
+
       h2{
         font-weight: bold;
         font-size: 4rem;
         color: @mine-shaft;
         line-height: 53px;
         font-weight: 600px;
+
           @media @tablet{
             font-size: 3rem;
           }
       }
+
       p{
         padding-right: 40%;
         margin-top: 8%;
@@ -147,16 +205,30 @@ header{
         font-size: 3rem;
         line-height: 40px;
         color: #666666;
+
           @media @tablet{
             font-size: 2.6rem;
           }
+
+          @media @phone {
+            // border: 1px solid black;
+            width: 100%;
+            margin-top: -0%;
+            font-size: 2rem;
+            padding: 0%;
+            }
       }
   }
+
   .feature2{
     // border: 1px solid red;
     margin-top: 8%;
     margin-bottom: 10%;
     width: 35%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       img{
         margin-bottom: 5%;
@@ -184,6 +256,11 @@ header{
           @media @tablet{
             font-size: 2.6rem;
           }
+
+          @media @phone {
+            margin-top: 8%;
+          }
+
       }
   }
 }
@@ -198,6 +275,11 @@ footer{
     p{
       color: @white;
       font-size: 1.8rem;
+
+      @media @phone {
+        font-size: 1.7rem
+      }
+
     }
 }
 

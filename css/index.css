@@ -345,7 +345,7 @@ footer p {
   justify-content: center;
 }
 .team .team-lead .team-member-content {
-  width: 331px;
+  width: 329px;
   background: white;
 }
 .team .team-lead .team-member-content h4 {
@@ -357,10 +357,11 @@ footer p {
 .team .team-member {
   width: 33.3%;
   display: flex;
+  margin-top: 5%;
   justify-content: center;
 }
 .team .team-member .team-member-content {
-  width: 331px;
+  width: 329px;
   background: white;
 }
 .team .team-member .team-member-content h4 {

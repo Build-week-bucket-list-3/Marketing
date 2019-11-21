@@ -5,12 +5,36 @@
   height: 8%;
   justify-content: space-between;
   background: @deep-cerulean;
+    @media @tablet{
+      height: 20%;
+    }
+    @media @phone {
+      // flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      height: 10%;
+      border: 1px solid black;
+    }
 
     .logo{
       width: 15%;
       .dspflx();
       justify-content: center;
       align-items: center;
+
+        @media @tablet{
+          width: 30%;
+        }
+
+        @media @phone {
+          .dspflx();
+          width: 20%;
+          height: 80%;
+          border: 1px solid red;
+          justify-content: center;
+          align-items: center;
+        }
+
         h2{
           .nav-a-style(@white, 3rem, 600px);
         }
@@ -22,8 +46,26 @@
     .dspflx();
     justify-content: space-evenly;
     align-items: center;
+      @media @tablet{
+        justify-content: space-between;
+        margin-right: 5%;
+        // border: 1px solid black;
+        width: 40%;
+      }
+
+      @media @phone {
+        .dspflx();
+        width: 35%;
+        border: 1px solid black;
+      }
+
       a{
         .nav-a-style(@white, 2.4rem, 600px);
+        
+          @media @phone {
+            .nav-a-style(@white, 2rem, 400px);
+          }
+        
       }
   } 
 
@@ -33,14 +75,39 @@
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+
+      @media @tablet{
+        // border: 1px solid black;
+        width: 50%;
+        flex-direction: column-reverse;
+      }
+
+      @media @phone {
+        .dspflx();
+        flex-direction: column;
+        border: 1px solid red;
+        width: 30%;
+      }
+
       a{
-        .nav-a-style(@white, 2.4rem, 600px);   
+        .nav-a-style(@white, 2.4rem, 600px);
+        
+          @media @phone {
+            .nav-a-style(@white, 2rem, 400px);
+            
+          }
+        
       }
 
     a:nth-child(2){
       padding: 2%;
       border-radius: 4px;
       border: 1px solid white;
+
+        @media @phone {
+          text-align: center;
+          padding: 0%;
+        }
     }
   }
 

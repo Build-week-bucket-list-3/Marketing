@@ -20,6 +20,18 @@
       .dspflx();
       width: 15%;
       justify-content: center;
+        a:hover {
+          box-shadow: none;
+        }
+
+        @media @tablet {
+          .dspflx();
+          width: 30%;
+
+            a:hover {
+              box-shadow: none;
+            }
+        }
 
         @media @phone {
           width: 100%;
@@ -88,6 +100,7 @@
       @media @tablet{
         width: 50%;
         flex-direction: column-reverse;
+        justify-content: baseline;
       }
 
       @media @phone {
@@ -117,7 +130,7 @@
       border: 1px solid @white;
 
         @media @tablet {
-          height: 20%;
+          height: 40%;
           margin-bottom: -10%;
         }
 
@@ -133,7 +146,9 @@
   }
 
   a:hover{
-    color: yellow;
+    font-style: bold;
+    color: @white;
+    box-shadow: 5px 5px @white;
   }
 };
 
